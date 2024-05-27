@@ -188,7 +188,7 @@ body {
 }
 
 #blob2 {
-    background-image: url(https://images.unsplash.com/photo-1603989872628-7880d83bb581?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==);
+    background-image: url(https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png);
     mask-image: url(blob2.svg);
     mask-repeat: no-repeat;
     mask-size: cover;
