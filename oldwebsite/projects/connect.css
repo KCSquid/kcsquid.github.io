@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body :not(button) {
+    font-family: 'Jersey 10';
+    letter-spacing: 2px;
+    text-align: center;
+    color: whitesmoke;
+    background: #2e86c1;
+    margin: 25px;
+    padding-top: 0.1%;
+}
+
+* :not(button) {
+    background-color: #2e86c1;
+}
+
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons-holder {
+    position: absolute;
+    top: 48%;
+    left: 50.2%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.btn {
+    margin-right: 11px;
+}
+
+button {
+    width: 110px;
+    height: 750px;
+    border: none;
+    position: relative;
+    top: 20px;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color:  #212f3d3a ;
+    border-radius: 15px;
+}
+
+h1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    position: absolute;
+    top: 8.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

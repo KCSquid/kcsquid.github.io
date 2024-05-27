@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #001220;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: 1s ease;
+}
+
+.light {
+    background-color: #F0F3F4;
+    color: black;
+}
+
+#logo {
+    font-size: 15rem;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-shadow: 0 0 800px white;
+}
+
+#logo.light {
+    text-shadow: 0 0 500px black;
+}
+
+#mode.light {
+    color: black;
+    border: black 4px solid;
+}
+
+#mode.light:hover {
+    box-shadow: 0 0 15px black;
+}
+
+#wave1 {
+    background-image: url(./wave1.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    width: 100vw;
+    background-size: cover;
+    background-position: bottom;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+}
+
+#wave2 {
+    background-image: url(./wave2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 130%;
+    width: 100vw;
+    background-size: cover;
+    background-position: bottom;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+}
+
+.part2 {
+    background-color: #1D8348;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 110%;
+    left: 0;
+    right: 0;
+}
+
+.part3 {
+    background-color: #3498db;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 210%;
+    left: 0;
+    right: 0;
+}
+
+.styleBtn {
+    text-align: center;
+    place-items: center;
+    align-items: center;
+    border: white 4px solid;
+    width: 8vmin;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background: none;
+    color: white;
+    font-size: 4vmin;
+    transition: 400ms ease;
+}
+
+#mode {
+    position: fixed;
+    right: 0%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+    border: white 4px solid;
+    z-index: 1000;
+}
+
+#mode:hover {
+    box-shadow: 0 0 15px white;
+}
+
+#scroll1 {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    font-size: 4.5vmin;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    color: white;
+    text-align: center;
+    transition: 400ms ease;
+}
+
+#scroll1:hover {
+    text-shadow: 0 0 15px white;
+    font-size: 5vmin;
+}
+
+#scroll2 {
+    position: absolute;
+    left: 50%;
+    top: 177%;
+    font-size: 4.5vmin;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    color: white;
+    text-align: center;
+    transition: 400ms ease;
+    z-index: 1000;
+}
+
+#scroll2:hover {
+    text-shadow: 0 0 15px white;
+    font-size: 5vmin;
+}
+
+.projects {
+    position: absolute;
+    top: 230%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vmin;
+    width: 100%;
+    text-align: center;
+}
+
+.blob {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30vw;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 320%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow( 0 0 10px rgba(0, 0, 0, .7));
+    transition: 500ms ease;
+}
+
+.blob:hover {
+    width: 33vw;
+    cursor: pointer;
+}
+
+#blob1 {
+    background-image: url(https://www.rd.com/wp-content/uploads/2023/10/GettyImages-1165139097-MW-Edit.jpg);
+    mask-image: url(blob1.svg);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+    left: 20%;
+}
+
+#blob2 {
+    background-image: url(https://images.unsplash.com/photo-1603989872628-7880d83bb581?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==);
+    mask-image: url(blob2.svg);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+    left: 50%;
+}
+
+#blob3 {
+    background-image: url(https://images.unsplash.com/photo-1603989872628-7880d83bb581?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==);
+    left: 80%;
+    mask-image: url(blob3.svg);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+}
+
+#blob1s {
+    background-image: url(blob1.svg);
+    left: 20%;
+    z-index: -1;
+}
+
+#blob2s {
+    background-image: url(blob2.svg);
+    left: 50%;
+    z-index: -1;
+}
+
+#blob3s {
+    background-image: url(blob3.svg);
+    left: 80%;
+    z-index: -1;
+}
+
+#blob3:hover + #blob3s {
+    width: 33vw;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #353535;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(88, 88, 88);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7c;
+  }
+
+.title {
+    text-align: center;
+}
+
+.info {
+    position: absolute;
+    top: 117%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vmin;
+    width: 100%;
+    text-align: center;
+}
+
+#about {
+    position: absolute;
+    font-size: 3.5vmin;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+::selection {
+    background-color: lightgreen;
+    color: black;
+}

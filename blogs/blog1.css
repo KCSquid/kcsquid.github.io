@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #F2F3F4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: 1s ease;   
+}
+
+.light {
+    background-color: #F0F3F4;
+    color: white;
+}
+
+#mode.light {
+    color: white;
+    border: white 4px solid;
+}
+
+#mode.light:hover {
+    box-shadow: 0 0 15px white;
+}
+
+#mode {
+    position: fixed;
+    right: 0%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+    border: black 4px solid;
+    z-index: 1000;
+}
+
+#mode:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.styleBtn {
+    text-align: center;
+    place-items: center;
+    align-items: center;
+    border: black 4px solid;
+    width: 8vmin;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background: none;
+    color: black;
+    font-size: 4vmin;
+    transition: 400ms ease;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #353535;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(88, 88, 88);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7c;
+}
+
+@media (min-width: 48em) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 35vmin;
+        text-align: left;
+        background-size: auto 110%;
+        background-position-y: var(--page-y);
+        background-position-x: 20%;
+        background-image: url(https://images.unsplash.com/photo-1601634499835-50158f60f9dc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+}
+
+.blog {
+    width: 60vmin;
+    position: absolute;
+    left: 45vmin;
+    top: 0;
+    bottom: 0;
+}
+
+#title {
+    /* width: 60vmin; */
+    position: absolute;
+    left: 50%;
+    top: 0vmin;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#text {
+    width: 60vmin;
+    position: absolute;
+    left: 50%;
+    top: 19vmin;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.5rem;
+    transform: translateX(-50%);
+}
+
+::selection {
+    background-color: lightskyblue;
+}
+
+#next {
+    position: fixed;
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#next:hover {
+    box-shadow: 0 0 15px black;
+}

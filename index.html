@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1 id="logo">KCS</h1>
+    <div id="wave1"></div>
+    <div class="part2"></div>
+    <div class="part3"></div>
+    <div class="header">
+        <button id="mode" class="styleBtn" onclick="changeMode(event)"><i class="fa fa-adjust" aria-hidden="true"></i></button>
+    </div>
+    <div class="buttons">
+        <button id="scroll1" onclick="scrollCo(event, 950)"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+        <button id="scroll2" onclick="scrollCo(event, 2000)"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+    </div>
+
+    <div class="info">
+        <h1 class="title" id="infoTitle">About Me</h1>
+        <p id="about">Hey! I'm Squid 🦑.<br>
+            I <b>actively</b> code in ~ Go 💙, C++ 🇨, Java ☕, Javascript/Node & Python 🐍.<br>
+            I <b>can</b> code [well/decent or learning] in ~ C/C# & Rust ⚙️.<br>
+            And <b>of course</b>, HTML/CSS...<br><br>
+            
+            I also do some engineering (Raspberry Pi 🥧 / Arduino)</p>
+    </div>
+
+    <div id="wave2"></div>
+
+    <div class="projects">
+        <h1 class="title" id="projectTitle">Projects</h1>
+        <div class="blob" id="blob1" onclick="redirect(event, 'https://github.com/KCSquid/Connect4-V2')"></div>
+        <div class="blob" id="blob1s"></div>
+        <div class="blob" id="blob2" onclick="redirect(event, 'https://github.com/KCSquid/Z--')"></div>
+        <div class="blob" id="blob2s"></div>
+        <div class="blob" id="blob3" onclick="redirect(event, 'blogs/blog1.html')"></div>
+        <div class="blob" id="blob3s"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 | KCS</title>
+
+    <link rel="stylesheet" href="connect.css">
+    <script src="connect.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Connect 4</h1>
+    <h2 id="game-over"></h1>
+    <div id="canvas"></div>
+    <body onload="startGame()"></body>
+    <div class="buttons-holder">
+        <button onclick="placeCircle(1)" class="btn" id="row1"></button>
+        <button onclick="placeCircle(2)" class="btn" id="row2"></button>
+        <button onclick="placeCircle(3)" class="btn" id="row3"></button>
+        <button onclick="placeCircle(4)" class="btn" id="row4"></button>
+        <button onclick="placeCircle(5)" class="btn" id="row5"></button>
+        <button onclick="placeCircle(6)" class="btn" id="row6"></button>
+        <button onclick="placeCircle(7)" class="btn" id="row7"></button>
+    </div>
+</body>
+</html>
